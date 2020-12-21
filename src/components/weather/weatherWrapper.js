@@ -37,9 +37,21 @@ class WeatherWrapper extends Component {
                     });
             }else{
                 alert("Enter city name");
+                this.setState({
+                    loading: false,
+                    initial: true,
+                    found:false,
+                    data:null
+                });
             }
         }else{
             alert("Enter city name");
+            this.setState({
+                loading: false,
+                initial: true,
+                found:false,
+                data:null
+            });
         }
     }
 
